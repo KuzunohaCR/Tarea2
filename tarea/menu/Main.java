@@ -3,14 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ucenfotec.poo.tarea;
+package cr.ac.ucenfotec.poo.tarea.menu;
 
+import cr.ac.ucenfotec.poo.tarea.user.Usuario;
+import cr.ac.ucenfotec.poo.tarea.user.Mascota;
+import cr.ac.ucenfotec.poo.tarea.formulario.Cita;
+import cr.ac.ucenfotec.poo.tarea.formulario.Reservacion;
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Set;
 
-public class main {
+public class Main {
 
     private static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static PrintStream output = new PrintStream(System.out);
@@ -61,10 +65,11 @@ public class main {
                     output.println("Raking de la mascota");
                     int ranking = input.nextInt();
                     /*Mascota nueva = new Mascota();
-                nueva.setNombre(nombre);
-                nueva.setEdad(edad);
-                nueva.setRaking(ranking);*/
-                    Mascota nueva = new Mascota(nombre, edad, ranking);
+                    nueva.setNombre(nombre);
+                    nueva.setEdad(edad);
+                    nueva.setRaking(ranking);*/
+                    Usuario duenio = new Usuario();
+                    Mascota nueva = new Mascota(nombre, edad, ranking, duenio);
 
                     int validar = validarNombre(nombre);
 

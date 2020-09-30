@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ucenfotec.poo.tarea;
+package cr.ac.ucenfotec.poo.tarea.user;
 
 public class Mascota {
 
     private String nombre;
     private int edad;
     private int ranking;
+    private Usuario nuevo;
 
     /**
      * @param args the command line arguments
@@ -38,15 +39,24 @@ public class Mascota {
         this.ranking = ranking;
     }
 
-    @Override
-    public String toString() {
-        return "Mascota:[nombre:" + this.nombre + ", edad:" + this.edad + ", ranking: " + this.ranking + "]";
+    public Usuario getNuevo() {
+        return nuevo;
     }
 
-    public Mascota(String nombre, int edad, int ranking) {
+    public void setNuevo(Usuario nuev0) {
+        this.nuevo = nuevo;
+    }
+
+    @Override
+    public String toString() {
+        return "Mascota:[nombre:" + this.nombre + ", edad:" + this.edad + ", ranking: " + this.ranking + ", dueño:" + this.nuevo + "]";
+    }
+
+    public Mascota(String nombre, int edad, int ranking, Usuario nuevo) {
         this.nombre = nombre;
         this.edad = edad;
         this.ranking = ranking;
+        this.nuevo = nuevo;
     }
 
     public Mascota() {

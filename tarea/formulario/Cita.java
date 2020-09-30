@@ -1,4 +1,4 @@
-package cr.ac.ucenfotec.poo.tarea;
+package cr.ac.ucenfotec.poo.tarea.formulario;
 
 public class Cita {
 
