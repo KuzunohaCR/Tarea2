@@ -5,17 +5,28 @@
  */
 package cr.ac.ucenfotec.proyectofinal.bl.entidades;
 
+import java.util.List;
+
 public class AlbumArtista {
-
+    
+    private int idAlbumArtista;
     private String nombreAlbumArtista;
-    private Cancion cancionAlbumArtista;
+    private List<Cancion> cancionAlbumArtista;
 
-    public Cancion getCancionAlbumArtista() {
+    public List<Cancion> getCancionAlbumArtista() {
         return cancionAlbumArtista;
     }
 
-    public void setCancionAlbumArtista(Cancion cancionAlbumArtista) {
+    public void setCancionAlbumArtista(List<Cancion> cancionAlbumArtista) {
         this.cancionAlbumArtista = cancionAlbumArtista;
+    }
+
+    public int getIdAlbumArtista() {
+        return idAlbumArtista;
+    }
+
+    public void setIdAlbumArtista(int idAlbumArtista) {
+        this.idAlbumArtista = idAlbumArtista;
     }
 
     public String getNombreAlbumArtista() {
@@ -25,18 +36,29 @@ public class AlbumArtista {
     public void setNombreAlbumArtista(String nombreAlbumArtista) {
         this.nombreAlbumArtista = nombreAlbumArtista;
     }
-
-    public AlbumArtista(String nombreAlbumArtista, Cancion cancionAlbumArtista) {
+    
+    /**
+     * Constructor Album del artista
+     * @param nombreAlbumArtista nombre del album del artista
+     */
+    public AlbumArtista(String nombreAlbumArtista/*, Cancion cancionAlbumArtista*/) {
         this.nombreAlbumArtista = nombreAlbumArtista;
-        this.cancionAlbumArtista = cancionAlbumArtista;
+      //  this.cancionAlbumArtista = cancionAlbumArtista;
     }
-
+    
+    /**
+     * Constructor vacio
+     */
     public AlbumArtista() {
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
-        return "AlbumArtista{" + "nombreAlbumArtista=" + nombreAlbumArtista + ", cancionAlbumArtista=" + cancionAlbumArtista + '}';
+        return "AlbumArtista{" + "idAlbumArtista=" + idAlbumArtista + "nombreAlbumArtista=" + nombreAlbumArtista + /*", cancionAlbumArtista=" + cancionAlbumArtista +*/ '}';
     }
 
 }

@@ -46,10 +46,23 @@ public class Usuario extends Persona {
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
     }
-
+    
+    /**
+     * Constructor vacio
+     */
     public Usuario() {
     }
-
+    
+    /**
+     * Constructor con parametros del padre Usuario
+     * @param edad edad del usuario
+     * @param correo correo del usuario 
+     * @param nombreUsuario Nick del usuario
+     * @param contrasenna contrasenna del usuario
+     * @param nombre nombre del usuario
+     * @param apellido apellido del usuario
+     * @param paises pais del usuario
+     */
     public Usuario(int edad, String correo, String nombreUsuario, String contrasenna, String nombre, String apellido, Pais paises) {
         super(nombre, apellido, paises);
         this.edad = edad;
@@ -57,7 +70,11 @@ public class Usuario extends Persona {
         this.nombreUsuario = nombreUsuario;
         this.contrasenna = contrasenna;
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "Usuario{" + "edad=" + edad + ", correo=" + correo + ", nombreUsuario=" + nombreUsuario + ", contrasenna=" + contrasenna + '}' + super.toString();

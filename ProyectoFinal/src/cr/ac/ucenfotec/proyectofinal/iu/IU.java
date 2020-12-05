@@ -16,19 +16,22 @@ public class IU {
     public void mostrarMenuLogin() {
         output.println("Bienvenido a El Baul de los Recuerdos");
         output.println("1. Administrador");
-        output.println("2. Usuario");
-        output.println("3. Salir");
+        output.println("2. Login Usuario");
+        output.println("3. Registrar Usuario");
+        output.println("4. Salir");
     }
 
     public void mostrarMenuAdmin() {
         output.println("Esta en menu Administrador");
-        output.println("1. Agregar artista");
-        output.println("2. Agregar compositor");
-        /*output.println("3. Agregar genero");
-        Quitar el comentario y modificar ejecutarMenuAdmin en controlador
-         */
-        output.println("3. Agregar cancion");
-        output.println("4. Salir");
+        output.println("1. Crear artista");
+        output.println("2. Crear compositor");
+        output.println("3. Crear genero");
+        output.println("4. Crear album");
+        output.println("5. Crear cancion");
+        output.println("6. agregar cancion a album");
+        output.println("7. Listar cancion en album");
+        output.println("8. Listar canciones en la tienda");
+        output.println("9. Salir");
     }
 
     public void mostrarMenuNoAdmin() {

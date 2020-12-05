@@ -34,16 +34,29 @@ public class Persona {
     public void setPaises(Pais paises) {
         this.paises = paises;
     }
-
+    
+    /**
+     * Constructor con parametros del padre Persona
+     * @param nombre nombre de la persona
+     * @param apellido apellido de la persona
+     * @param paises pais de la persona
+     */
     public Persona(String nombre, String apellido, Pais paises) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.paises = paises;
     }
-
+    
+    /**
+     * Constructor vacio
+     */
     public Persona() {
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", paises=" + paises + '}';

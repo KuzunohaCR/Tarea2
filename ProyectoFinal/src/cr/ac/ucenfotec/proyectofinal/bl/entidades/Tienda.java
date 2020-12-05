@@ -7,26 +7,40 @@ package cr.ac.ucenfotec.proyectofinal.bl.entidades;
 
 public class Tienda {
 
-    private Artista tiendaArtista;
+    private Cancion canciones;
 
-    public Artista getTiendaArtista() {
-        return tiendaArtista;
+    public Cancion getCanciones() {
+        return canciones;
     }
 
-    public void setTiendaArtista(Artista tiendaArtista) {
-        this.tiendaArtista = tiendaArtista;
+    public void setCanciones(Cancion canciones) {
+        this.canciones = canciones;
     }
-
-    public Tienda(Artista tiendaArtista) {
-        this.tiendaArtista = tiendaArtista;
-    }
-
+    
+    /**
+     * Constructor vacio
+     */
     public Tienda() {
     }
 
+    /**
+     * Constructor con parametros de la tienda
+     * @param canciones canciones en la tienda
+     */
+    public Tienda(Cancion canciones) {
+        this.canciones = canciones;
+    }
+    
+    
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
-        return "Tienda{" + "tiendaArtista=" + tiendaArtista + '}';
+        return "Tienda{" + "Canciones=" + canciones + '}';
     }
+
+  
 
 }
